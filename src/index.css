@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import "tailwindcss-animated";
+
+@keyframes bg-position {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.bg-position-animation {
+  animation: bg-position 1s linear infinite;
+}
+
+@font-face {
+  font-family: "mabook";
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("./assets/fonts/Mabook.otf") format("opentype");
+}
+
+@theme {
+  --font-mabook: "mabook", sans-serif;
+}
