@@ -7,7 +7,7 @@ export default function Header() {
       <div className="md:h-52 h-24 flex justify-center items-center px-4 bg-indigo-400  rounded-4xl w-[98%] mx-auto z-20 ">
         <ContactButton />
         <img
-          src={`${import.meta.env.BASE_URL}/assets/images/logo.png`}
+          src={`${import.meta.env.BASE_URL}/assets/images/logo.svg`}
           alt="logo"
           className="h-full w-full p-2"
         />
