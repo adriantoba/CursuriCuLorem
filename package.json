@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://adriantoba.github.io/germanacuclaudiu",
+  "homepage": "https://adriantoba.github.io/GermanaCuClaudiu/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
