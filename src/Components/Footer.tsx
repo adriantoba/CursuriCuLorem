@@ -10,7 +10,7 @@ import {
 export default function Footer() {
   return (
     <div className="md:h-52 h-40 bg-slate-800 font-mabook">
-      <div className="flex h-full pb-4 mx-auto justify-center md:justify-center sm:mx-16 gap-52">
+      <div className="flex h-full pb-4 mx-auto justify-center md:justify-center sm:mx-16 md:gap-52 gap-24">
         <div className="flex flex-col justify-between mb-2 items-center">
           <h1 className="text-white md:text-3xl text-lg font-bold my-4">
             Contact

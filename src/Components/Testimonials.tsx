@@ -13,15 +13,15 @@ const ScrollingTestimonials = () => {
     setIsPaused(false);
   };
   return (
-    <div className="bg-amber-300 py-12">
+    <div className="bg-amber-300 py-18">
       <div className="mb-8 px-4">
-        <h3 className="text-black text-5xl font-mabook text-center drop-shadow-2xl">
+        <h3 className="text-black sm:text-5xl text-4xl font-mabook text-center drop-shadow-2xl">
           Testimoniale de la parinti
         </h3>
         <p className="text-center text-slate-300 text-sm mt-2 max-w-lg mx-auto"></p>
       </div>
       <div className="p-4 overflow-x-hidden relative">
-        <div className="absolute top-0 bottom-0 left-0 w-24 z-10 bg-gradient-to-r from-amber-300  to-transparent opacity-55" />
+        <div className="absolute top-0 bottom-0 left-0 w-24 z-2 bg-gradient-to-r from-amber-300  to-transparent opacity-55" />
 
         <div
           className="flex items-center mb-4"

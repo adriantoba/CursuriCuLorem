@@ -1,6 +1,6 @@
 import { CiWarning } from "react-icons/ci";
 
-export default function ImplicareSociala() {
+export default function OfertaDeCursuri24() {
   return (
     <div className="h-screen bg-amber-300 pt-8">
       <div className="mx-auto flex flex-col items-center justify-center gap-3">

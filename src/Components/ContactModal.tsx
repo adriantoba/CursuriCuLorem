@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "../lib/utils";
 import { FiXCircle } from "react-icons/fi";
@@ -10,27 +10,32 @@ import {
   FaAt,
 } from "react-icons/fa";
 
-export default function ContactButton({
-  modalSize = "lg",
-}: {
+interface ContactModalProps {
+  isOpenContact: boolean;
+  setIsOpenContact: Dispatch<SetStateAction<boolean>>;
   modalSize?: "sm" | "lg";
-}) {
-  const [isOpen, setIsOpen] = useState(false);
+}
+
+export default function ContactModal({
+  modalSize = "lg",
+  isOpenContact,
+  setIsOpenContact,
+}: ContactModalProps) {
   return (
     <div className="flex items-center text-white">
-      <motion.button
+      {/* <motion.button
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.9 }}
-        onClick={() => setIsOpen(true)}
+        onClick={() => setIsOpenContact(true)}
         className="md:text-2xl text-md font-mabook text-black hover:text-amber-500 transition-colors p-4 rounded-full bg-white"
       >
         Contact
-      </motion.button>
+      </motion.button> */}
 
       <AnimatePresence>
-        {isOpen && (
+        {isOpenContact && (
           <div
-            onClick={() => setIsOpen(false)}
+            onClick={() => setIsOpenContact(false)}
             className="fixed inset-0 z-50 flex cursor-pointer items-center justify-center overflow-y-scroll bg-slate-900/20 p-8 backdrop-blur font-mabook"
           >
             <motion.div
@@ -46,7 +51,7 @@ export default function ContactButton({
               exit={{ scale: 0, rotate: "180deg" }}
               onClick={(e) => e.stopPropagation()}
               className={cn(
-                "relative w-3xl  cursor-default overflow-hidden rounded-xl bg-amber-300 p-6 text-white shadow-2xl",
+                "relative w-3xl  cursor-default overflow-hidden rounded-xl bg-amber-300 p-4 text-white shadow-2xl",
                 {
                   "max-w-sm": modalSize === "sm",
                 }
@@ -55,7 +60,7 @@ export default function ContactButton({
               <motion.button
                 whileHover={{ rotate: "180deg" }}
                 whileTap={{ scale: 0.9 }}
-                onClick={() => setIsOpen(false)}
+                onClick={() => setIsOpenContact(false)}
                 className="rounded-full font-bold text-white transition-colors hover:text-red-600 text-5xl absolute top-2 left-2"
               >
                 <FiXCircle className="drop-shadow-lg" />
@@ -63,7 +68,7 @@ export default function ContactButton({
               <div className="flex flex-col gap-3">
                 <h3
                   className={cn(
-                    "text-center text-6xl text-black font-bold drop-shadow-3xl",
+                    "text-center md:text-6xl text-3xl text-black font-bold drop-shadow-3xl",
                     {
                       "text-2xl": modalSize === "sm",
                     }
@@ -71,11 +76,11 @@ export default function ContactButton({
                 >
                   Contact
                 </h3>
-                <p className="mb-1 text-center text-3xl text-black font-semibold drop-shadow-lg ">
+                <p className="mb-1 text-center md:text-3xl text-lg text-black font-semibold drop-shadow-lg ">
                   Pentru mai multe detalii si programari ma puteti contacta prin
                   telefon sau Whatsapp
                 </p>
-                <div className="flex justify-center gap-6 pt-3 ">
+                <div className="flex justify-center md:gap-6 gap-3 pt-3 mx-auto ">
                   <motion.button
                     whileHover={{ scale: 1.3 }}
                     whileTap={{ scale: 0.9 }}
