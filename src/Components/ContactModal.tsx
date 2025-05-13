@@ -22,7 +22,7 @@ export default function ContactModal({
   setIsOpenContact,
 }: ContactModalProps) {
   return (
-    <div className="flex items-center text-white">
+    <div className="flex items-center text-white ">
       {/* <motion.button
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.9 }}
@@ -36,7 +36,7 @@ export default function ContactModal({
         {isOpenContact && (
           <div
             onClick={() => setIsOpenContact(false)}
-            className="fixed inset-0 z-50 flex cursor-pointer items-center justify-center overflow-y-scroll bg-slate-900/20 p-8 backdrop-blur font-mabook"
+            className="fixed inset-0 z-50 flex cursor-pointer items-center justify-center overflow-y-scroll bg-slate-900/20 p-8 backdrop-blur font-mabook "
           >
             <motion.div
               initial={{ scale: 0, rotate: "180deg" }}
@@ -51,7 +51,7 @@ export default function ContactModal({
               exit={{ scale: 0, rotate: "180deg" }}
               onClick={(e) => e.stopPropagation()}
               className={cn(
-                "relative w-3xl  cursor-default overflow-hidden rounded-xl bg-amber-300 p-4 text-white shadow-2xl",
+                "relative w-3xl  cursor-default overflow-hidden rounded-xl bg-amber-300 p-4 text-white shadow-2xl border-4 border-black",
                 {
                   "max-w-sm": modalSize === "sm",
                 }
@@ -65,7 +65,7 @@ export default function ContactModal({
               >
                 <FiXCircle className="drop-shadow-lg" />
               </motion.button>
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-3 ">
                 <h3
                   className={cn(
                     "text-center md:text-6xl text-3xl text-black font-bold drop-shadow-3xl",

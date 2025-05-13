@@ -1,9 +1,9 @@
 {
-  "name": "germanacuclaudiu",
+  "name": "cursuriculorem",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://adriantoba.github.io/GermanaCuClaudiu/",
+  "homepage": "https://adriantoba.github.io/CursuriCuLorem/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

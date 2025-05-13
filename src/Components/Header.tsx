@@ -34,7 +34,7 @@ export default function Header() {
           setIsOpenContact={setIsOpenContact}
         />
         <LiquidSideNav isOpen={isOpen} setIsOpen={setIsOpen} />
-        <a href="/GermanaCuClaudiu/">
+        <a href="/CursuriCuLorem/">
           <img
             src={`${import.meta.env.BASE_URL}/assets/images/logo.svg`}
             alt="logo"

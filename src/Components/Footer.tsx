@@ -41,11 +41,11 @@ export default function Footer() {
           <div className="mb-10 flex flex-col justify-center items-center gap-2">
             <span className="flex items-center gap-2 text-white md:text-lg text-xs">
               <FaFacebook />
-              <p>Germana cu Caludiu</p>
+              <p>Cursuri cu Lorem</p>
             </span>
             <span className="flex items-center gap-2 text-white md:text-lg text-xs">
               <FaInstagram />
-              <p>germanacuclaudiu</p>
+              <p>cursuriculorem</p>
             </span>
           </div>
         </div>

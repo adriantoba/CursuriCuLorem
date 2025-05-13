@@ -10,16 +10,6 @@ interface LiquidSideNavProps {
 const LiquidSideNav = ({ isOpen, setIsOpen }: LiquidSideNavProps) => {
   return (
     <div className="fixed z-20">
-      {/* <div className="flex items-center text-white">
-        <motion.button
-          whileHover={{ rotate: "180deg" }}
-          whileTap={{ scale: 0.9 }}
-          onClick={() => setIsOpen(true)}
-          className="md:text-3xl text-md  text-black hover:text-amber-300 transition-colors p-4 rounded-full bg-white"
-        >
-          <FiMenu />
-        </motion.button>{" "}
-      </div> */}
       <Nav isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
   );
@@ -52,23 +42,11 @@ const Nav = ({
         className="flex flex-col gap-4 absolute bottom-12 left-8"
       >
         <NavLink text="Home" link="/" />
-        <NavLink
-          text="Anul Scolar 2024-2025"
-          link="/GermanaCuClaudiu/anul-scolar-2024"
-        />
-        <NavLink
-          text="Anul Scolar 2025-2026"
-          link="/GermanaCuClaudiu/anul-scolar-2025"
-        />
-        <NavLink text="Praktikum/Practica" link="/GermanaCuClaudiu/practica" />
-        <NavLink
-          text="Sommerkurse/Germana cu Claudiu de vara"
-          link="/GermanaCuClaudiu/Sommerkurse"
-        />
-        <NavLink
-          text="Implicare Sociala"
-          link="/GermanaCuClaudiu/implicare-sociala"
-        />
+        <NavLink text="Page 1" link="/CursuriCuLorem/page-1" />
+        <NavLink text="Page 2" link="/CursuriCuLorem/page-2" />
+        <NavLink text="Page 3" link="/CursuriCuLorem/page-3" />
+        <NavLink text="Page 4" link="/CursuriCuLorem/page-4" />
+        <NavLink text="Page 5" link="/CursuriCuLorem/page-5" />
       </motion.div>
     </motion.nav>
   );

@@ -1,25 +1,25 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
-import OfertaDeCursuri24 from "./Pages/OfertaDeCursuri24";
-import OfertaDeCursuri25 from "./Pages/OfertaDeCursuri25";
-import Praktikum from "./Pages/Praktikum";
-import Sommerkurse from "./Pages/Sommerkurse";
-import ImplicareSociala from "./Pages/ImplicareSociala";
+import Page1 from "./Pages/Page2";
+import Page2 from "./Pages/Page3";
+import Page3 from "./Pages/Page4";
+import Page4 from "./Pages/Page5";
+import Page5 from "./Pages/Page1";
 import Header from "./Components/Header";
 
 import Footer from "./Components/Footer";
 
 export default function App() {
   return (
-    <BrowserRouter basename="/GermanaCuClaudiu">
+    <BrowserRouter basename="/CursuriCuLorem">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/anul-scolar-2024" element={<OfertaDeCursuri24 />} />
-        <Route path="/anul-scolar-2025" element={<OfertaDeCursuri25 />} />
-        <Route path="/practica" element={<Praktikum />} />
-        <Route path="/sommerkurse" element={<Sommerkurse />} />
-        <Route path="/implicare-sociala" element={<ImplicareSociala />} />
+        <Route path="/page-1" element={<Page1 />} />
+        <Route path="/page-2" element={<Page2 />} />
+        <Route path="/page-3" element={<Page3 />} />
+        <Route path="/page-4" element={<Page4 />} />
+        <Route path="/page-5" element={<Page5 />} />
       </Routes>
       <Footer />
     </BrowserRouter>
