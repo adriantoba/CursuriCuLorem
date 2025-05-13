@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useState } from "react";
+import { Dispatch, SetStateAction } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "../lib/utils";
 import { FiXCircle } from "react-icons/fi";
@@ -23,15 +23,6 @@ export default function ContactModal({
 }: ContactModalProps) {
   return (
     <div className="flex items-center text-white ">
-      {/* <motion.button
-        whileHover={{ scale: 1.2 }}
-        whileTap={{ scale: 0.9 }}
-        onClick={() => setIsOpenContact(true)}
-        className="md:text-2xl text-md font-mabook text-black hover:text-amber-500 transition-colors p-4 rounded-full bg-white"
-      >
-        Contact
-      </motion.button> */}
-
       <AnimatePresence>
         {isOpenContact && (
           <div

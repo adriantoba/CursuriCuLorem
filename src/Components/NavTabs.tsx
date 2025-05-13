@@ -1,5 +1,5 @@
-import { Dispatch, SetStateAction, useState } from "react";
-import { FiMenu, FiX } from "react-icons/fi";
+import { Dispatch, SetStateAction } from "react";
+import { FiX } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 interface LiquidSideNavProps {
